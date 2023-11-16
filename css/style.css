@@ -38,9 +38,10 @@ body {
 .header {
    position: relative;
    display: flex;
-   justify-content: space-evenly;
+   flex-direction: row-reverse;
    padding: 1em;
    /* align-items: center; */
+   width: 100%;
    background-image: url(../img/banner-bg.jpg);
    background-repeat: no-repeat;
    background-size: cover;
@@ -62,9 +63,8 @@ body {
 .main-title {
    display: flex;
    align-items: center;
-   padding-left: 10em;
-   width: 33.95em;
-   font-size: 20px;
+   padding-left: 5em;
+   font-size: 31px;
    font-family: "OpenSans";
    color: rgb(255, 255, 255);
    font-weight: bold;
@@ -83,6 +83,7 @@ svg {
 
 .logo {
    display: flex;
+   margin-left: 12em;
 }
 
 .menu a {
@@ -99,10 +100,16 @@ svg {
 
 .menu {
    display: flex;
+   margin-right: 10em;
    list-style-type: none;
    margin-top: 3em;
    z-index: 3;
 
+}
+
+.menu:hover a {
+   text-decoration: underline;
+   color: white;
 }
 
 .title-trend {
@@ -133,6 +140,7 @@ svg {
 .trend-box {
    position: relative;
    display: flex;
+   width: 100%;
    justify-content: space-between;
    gap: 1em;
    margin-top: 1em;
@@ -191,13 +199,13 @@ svg {
 
 }
 
-.first-box {
+.hobby {
    display: flex;
    margin-bottom: 60px;
 
 }
 
-.first-box-category {
+.hobby-category {
    display: inline-block;
    font-size: 15.697px;
    margin: 0;
@@ -209,7 +217,12 @@ svg {
    line-height: 2.857;
 }
 
-.first-box-title {
+.hobby-category:hover {
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+.hobby-title {
    margin: 0;
    margin-top: 16px;
    margin-left: 30px;
@@ -222,7 +235,11 @@ svg {
    width: 400px;
 }
 
-.first-box-date {
+.hobby-title:hover {
+   color: rgb(181, 159, 91);
+}
+
+.hobby-date {
    margin: 0;
    margin-left: 30px;
    display: inline-block;
@@ -232,7 +249,7 @@ svg {
    line-height: 3.333;
 }
 
-.first-box-author {
+.hobby-author {
    margin: 0;
    margin-top: 40px;
    margin-left: 16px;
@@ -244,7 +261,7 @@ svg {
    line-height: 3.333;
 }
 
-.first-box-text {
+.hobby-text {
    margin: 0;
    margin-top: 0;
    margin-left: 30px;
@@ -283,12 +300,12 @@ svg {
    height: 3px;
 }
 
-.second-box {
+.newposts-hobby {
    display: flex;
    margin-bottom: 20px;
 }
 
-.second-box-date {
+.newposts-hobby-date {
    margin-top: 0;
    margin-bottom: 0;
    margin-left: 20px;
@@ -299,7 +316,7 @@ svg {
    text-align: left;
 }
 
-.second-box-title {
+.newposts-hobby-title {
    margin-top: 0;
    margin-bottom: 0;
    margin-left: 20px;
@@ -312,6 +329,10 @@ svg {
    width: 250px;
 
 
+}
+
+.newposts-hobby-title:hover {
+   color: rgb(181, 159, 91);
 }
 
 .container {
@@ -333,6 +354,10 @@ svg {
    margin-top: 64px;
 }
 
+input:focus {
+   border: 2px solid rgb(181, 159, 91);
+}
+
 .search form {
    position: relative;
    width: 300px;
@@ -347,6 +372,10 @@ svg {
    outline: none;
    background-color: rgb(244, 247, 246);
 
+}
+
+.search input:focus {
+   border: 2px solid rgb(181, 159, 91);
 }
 
 .visually-hidden {
@@ -368,6 +397,10 @@ svg {
    background-position: center;
    background-size: 40%;
 
+}
+
+.search button:focus {
+   background-color: black;
 }
 
 .newsletter {
@@ -427,6 +460,10 @@ svg {
    margin-top: 20px;
 }
 
+.tegs-list a:hover {
+   color: rgb(181, 159, 91);
+}
+
 .tegs {
    display: flex;
    justify-content: center;
@@ -484,11 +521,6 @@ svg {
    margin-left: 30px;
 }
 
-.tegs-list p {
-   margin-top: 0;
-   margin-bottom: 0;
-}
-
 .themes {
    display: flex;
    justify-content: center;
@@ -524,6 +556,10 @@ a {
    color: rgb(0, 0, 0);
    font-weight: bold;
    line-height: 3.357;
+}
+
+.topics a:hover {
+   color: rgb(181, 159, 91);
 }
 
 sup {
