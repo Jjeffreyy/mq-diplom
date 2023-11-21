@@ -22,13 +22,11 @@ body {
 }
 
 body {
-   margin: 0;
-   display: flex;
-   flex-direction: column;
-   min-height: 100vh;
+   overflow-x: hidden;
 }
 
 .content {
+   /* max-width: 1660px; */
    margin: 0 auto;
    padding-bottom: 20em;
    flex: 1 auto;
@@ -47,8 +45,13 @@ body {
    background-image: url(../img/banner-bg.jpg);
    background-repeat: no-repeat;
    background-size: cover;
-   max-width: 100%;
    height: 450px;
+}
+
+.header-top {
+   display: flex;
+   justify-content: space-around;
+   height: 100px;
 }
 
 .header-conteiner:after {
@@ -65,6 +68,7 @@ body {
 .main-title {
    display: flex;
    align-items: center;
+   margin: 0;
    font-size: 31px;
    font-family: "OpenSans";
    color: rgb(255, 255, 255);
@@ -98,6 +102,13 @@ svg {
 
 .menu li {}
 
+.header-menu {
+   display: flex;
+   justify-content: space-around;
+   z-index: 3;
+
+}
+
 .menu {
    display: flex;
    list-style-type: none;
@@ -130,7 +141,7 @@ svg {
    opacity: 0.4;
    position: absolute;
    top: 70px;
-   right: 47%;
+   right: 48%;
    width: 100px;
    height: 3px;
 
