@@ -12,34 +12,162 @@
    src: url(../fonts/OpenSans-Regular.ttf)format('ttf'),
       url(../fonts/OpenSans-Regular.woff)format('woff'),
       url(../fonts/OpenSans-Regular.woff2)format('woff2');
-   font-weight: 300;
+   font-weight: 400;
    font-style: regular;
 }
 
 html,
-body {
-   height: 100%;
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
 }
 
 body {
-   overflow-x: hidden;
+   line-height: 1;
 }
 
-.content {
-   /* max-width: 1660px; */
+ol,
+ul {
+   list-style: none;
+}
+
+blockquote,
+q {
+   quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+*,
+
+*::before,
+
+*::after {
+
+   box-sizing: border-box;
+
+}
+
+body {
+   max-width: 1660px;
    margin: 0 auto;
-   padding-bottom: 20em;
    flex: 1 auto;
 }
 
-.conteiner {
-   margin: 0 auto;
-}
+.conteiner {}
 
 .header-conteiner {
    position: relative;
    display: flex;
-   justify-content: space-around;
    padding: 1em;
    width: 100%;
    background-image: url(../img/banner-bg.jpg);
@@ -50,8 +178,7 @@ body {
 
 .header-top {
    display: flex;
-   justify-content: space-around;
-   height: 100px;
+
 }
 
 .header-conteiner:after {
@@ -78,16 +205,10 @@ body {
    z-index: 3;
 }
 
-svg {
+.logo img {
+   display: flex;
    width: 100px;
    height: 100px;
-   fill: red;
-
-}
-
-.logo {
-   display: flex;
-   margin-left: 12em;
 }
 
 .menu a {
@@ -122,9 +243,19 @@ svg {
    color: white;
 }
 
-.title-trend {
+.trend {
+   margin-top: 50px;
+}
+
+.container-trend {
    display: flex;
    justify-content: center;
+}
+
+.title-trend {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    margin-top: 2em;
    font-size: 20px;
    font-family: "OpenSans";
@@ -135,7 +266,7 @@ svg {
    line-height: 1.458;
 }
 
-.decor::after {
+.title-trend::after {
    content: '';
    background-color: rgb(181, 159, 91);
    opacity: 0.4;
@@ -153,7 +284,7 @@ svg {
    width: 100%;
    justify-content: space-between;
    gap: 1em;
-   margin-top: 1em;
+   margin-top: 10em;
 }
 
 .art-trend {
