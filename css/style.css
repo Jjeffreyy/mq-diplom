@@ -87,27 +87,24 @@ body {
 }
 
 .main-title {
-
-   padding-top: 200px;
-   padding-right: 300px;
+   position: relative;
+   padding: 130px 350px 140px 350px;
+   text-align: center;
    font-size: 31px;
    font-family: "OpenSans";
    color: rgb(255, 255, 255);
    font-weight: bold;
    text-transform: uppercase;
    line-height: 1.667;
-   z-index: 3;
+   z-index: 4;
 }
 
-.logo img {
-   display: flex;
-   width: 100px;
-   height: 100px;
+.logo {
+   width: 179px;
    z-index: 3;
 }
 
 .menu a {
-   text-decoration: none;
    font-size: 13px;
    font-family: "OpenSans";
    color: rgb(255, 255, 255);
@@ -115,8 +112,6 @@ body {
    line-height: 1.2;
    padding-right: 1em;
 }
-
-.menu li {}
 
 .header-menu {
    display: flex;
@@ -127,8 +122,6 @@ body {
 
 .menu {
    display: flex;
-   list-style-type: none;
-   margin-top: 3em;
    z-index: 3;
 
 }
@@ -321,7 +314,6 @@ body {
 
 .newposts {
    margin-left: 6em;
-   margin-bottom: ;
    position: relative;
 }
 
@@ -369,11 +361,6 @@ body {
 
 .newposts-hobby-title:hover {
    color: rgb(181, 159, 91);
-}
-
-.container {
-   display: flex;
-   justify-content: space-around;
 }
 
 .main {
@@ -541,7 +528,6 @@ input:focus {
 }
 
 .tegs-list li {
-   list-style-type: none;
    display: inline-block;
 }
 
@@ -738,30 +724,12 @@ sup {
    background-color: #f4f7f6;
    height: 170px;
    justify-content: center;
+   align-items: center;
 
 }
 
-.footer-art li {
-   list-style-type: none;
-   display: inline-block;
+.footer-top {
+   width: 20px;
 }
 
-.footer-art img {
-   padding-left: 50px;
-   padding-top: 50px;
-   fill: black;
-   width: 50px;
-   height: 50px;
-}
-
-.under-footer {
-   display: flex;
-   justify-content: center;
-   margin: 50px;
-   margin-bottom: 50px;
-   font-size: 13.455px;
-   font-family: "OpenSans";
-   color: rgb(153, 153, 153);
-   font-weight: bold;
-   line-height: 3.333;
-}
+.copyright {}
