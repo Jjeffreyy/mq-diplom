@@ -59,7 +59,7 @@ body {
 
 .header {
    position: relative;
-   padding: 1em;
+   padding: 28px;
    width: 100%;
    background-image: url(../img/banner-bg.jpg);
    background-repeat: no-repeat;
@@ -126,7 +126,7 @@ body {
 
 }
 
-.menu:hover a {
+.menu-link:hover {
    text-decoration: underline;
    color: white;
 }
@@ -135,22 +135,16 @@ body {
    margin-top: 50px;
 }
 
-.section-trend {
-   display: flex;
-   justify-content: center;
-}
-
 .title-trend {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+   position: relative;
+   left: 37em;
    margin-top: 2em;
    font-size: 20px;
    font-family: "OpenSans";
    color: rgb(15, 13, 14);
    font-weight: bold;
    text-transform: uppercase;
-   position: relative;
+
    line-height: 1.458;
 }
 
@@ -159,24 +153,23 @@ body {
    background-color: rgb(181, 159, 91);
    opacity: 0.4;
    position: absolute;
-   top: 70px;
-   right: 48%;
+   top: 1.5em;
+   left: 2em;
    width: 100px;
    height: 3px;
 
 }
 
 .trend-box {
-   position: relative;
    display: flex;
+   position: relative;
    width: 100%;
-   justify-content: space-between;
-   gap: 1em;
-   margin-top: 10em;
+   gap: 1.3em;
+   /* margin-top: 5em; */
 }
 
 .art-trend {
-   width: 100%;
+   width: 400px;
 }
 
 .trend {
@@ -229,7 +222,6 @@ body {
 }
 
 .hobby {
-   display: flex;
    margin-bottom: 60px;
 
 }
@@ -381,13 +373,13 @@ input:focus {
    border: 2px solid rgb(181, 159, 91);
 }
 
-.search form {
+.search-form {
    position: relative;
    width: 300px;
    margin-top: 60px;
 }
 
-.search input {
+.search-input {
    width: 271px;
    height: 49px;
    padding-left: 10px;
@@ -397,7 +389,7 @@ input:focus {
 
 }
 
-.search input:focus {
+.search-input:focus {
    border: 2px solid rgb(181, 159, 91);
 }
 
@@ -406,7 +398,7 @@ input:focus {
    transform: scale(0);
 }
 
-.search button {
+.search-button {
    position: absolute;
    top: 0;
    background-color: rgb(181, 159, 91);
@@ -422,14 +414,11 @@ input:focus {
 
 }
 
-.search button:focus {
+.search-button:focus {
    background-color: black;
 }
 
 .newsletter {
-   display: flex;
-   justify-content: center;
-   align-items: center;
    margin-top: 60px;
    margin-right: 50px;
    position: relative;
@@ -451,7 +440,7 @@ input:focus {
    height: 3px;
 }
 
-.email input {
+.email-input {
    font-size: 14.576px;
    font-family: "OpenSans";
    color: rgba(0, 0, 0, 0.541);
@@ -464,7 +453,7 @@ input:focus {
 
 }
 
-.email button {
+.email-button {
    margin-top: 20px;
    font-size: 15.697px;
    font-family: "OpenSans";
@@ -483,14 +472,11 @@ input:focus {
    margin-top: 20px;
 }
 
-.tegs-list a:hover {
+.tegs-link:hover {
    color: rgb(181, 159, 91);
 }
 
 .tegs {
-   display: flex;
-   justify-content: center;
-   align-items: center;
    position: relative;
    margin-top: 60px;
    margin-right: 50px;
@@ -544,9 +530,6 @@ input:focus {
 }
 
 .themes {
-   display: flex;
-   justify-content: center;
-   align-items: center;
    position: relative;
    margin-top: 60px;
    margin-right: 50px;
@@ -589,8 +572,6 @@ sup {
 }
 
 .our-products {
-   display: flex;
-   justify-content: center;
    position: relative;
    font-size: 20px;
    font-family: "OpenSans";
@@ -609,11 +590,7 @@ sup {
    top: 60px;
 }
 
-.our-products-prices {
-   display: flex;
-   justify-content: space-evenly;
-
-}
+.our-products-prices {}
 
 .product-title h3 {
 
@@ -719,17 +696,25 @@ sup {
 
 .footer {
    margin-top: 50px;
-   display: flex;
-   width: 100%;
+   /* width: 100%;
    background-color: #f4f7f6;
-   height: 170px;
+   height: 170px; */
+
+}
+
+.footer-images-list {
+   display: flex;
    justify-content: center;
-   align-items: center;
-
+   background-color: #f4f7f6;
 }
 
-.footer-top {
+.footer-image {
    width: 20px;
+   height: 20px;
+   margin-right: 30px;
 }
 
-.copyright {}
+.copyright {
+   margin: 50px 0;
+   text-align: center;
+}
