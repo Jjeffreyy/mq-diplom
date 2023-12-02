@@ -132,7 +132,9 @@ body {
 }
 
 .trend {
+   position: relative;
    margin-top: 50px;
+   width: calc(25% - margin);
 }
 
 .title-trend {
@@ -163,17 +165,11 @@ body {
 .trend-box {
    display: flex;
    position: relative;
-   width: 100%;
    gap: 1.3em;
-   /* margin-top: 5em; */
 }
 
 .art-trend {
    width: 400px;
-}
-
-.trend {
-   position: relative;
 }
 
 .text-trend {
@@ -219,6 +215,10 @@ body {
    text-transform: uppercase;
    line-height: 1.2;
 
+}
+
+.box-post-list {
+   float: inline-end;
 }
 
 .hobby {
@@ -305,23 +305,32 @@ body {
 }
 
 .newposts {
-   margin-left: 6em;
    position: relative;
+   top: 0;
+   left: 5em;
+
 }
 
-.newposts-decor::after {
+.newpost-hobby-block {
+   margin-top: 1em;
+}
+
+.newposts-hobby-post-list {
+   float: inline-end;
+}
+
+.newposts::after {
    content: '';
    background-color: rgb(181, 159, 91);
    opacity: 0.4;
    position: absolute;
-   top: 50px;
-   right: 63%;
+   top: 30px;
+   right: 71%;
    width: 70px;
    height: 3px;
 }
 
 .newposts-hobby {
-   display: flex;
    margin-bottom: 20px;
 }
 
@@ -357,16 +366,9 @@ body {
 
 .main {
    display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
+   justify-content: space-between;
    margin-top: 64px;
 
-}
-
-.aside {
-   display: flex;
-   flex-direction: column;
-   margin-top: 64px;
 }
 
 input:focus {
@@ -420,8 +422,10 @@ input:focus {
 
 .newsletter {
    margin-top: 60px;
+   margin-bottom: 30px;
    margin-right: 50px;
    position: relative;
+   left: 7em;
    font-size: 14px;
    font-family: "OpenSans";
    color: rgb(15, 13, 14);
@@ -429,13 +433,13 @@ input:focus {
    text-transform: uppercase;
 }
 
-.newsletter-decor::after {
+.newsletter::after {
    content: '';
    background-color: rgb(181, 159, 91);
    opacity: 0.4;
    position: absolute;
-   top: 45px;
-   right: 38%;
+   top: 30px;
+   right: 72%;
    width: 70px;
    height: 3px;
 }
@@ -478,8 +482,10 @@ input:focus {
 
 .tegs {
    position: relative;
+   left: 9em;
    margin-top: 60px;
    margin-right: 50px;
+   margin-bottom: 30px;
    font-size: 14px;
    font-family: "OpenSans";
    color: rgb(15, 13, 14);
@@ -488,13 +494,13 @@ input:focus {
    line-height: 2.082;
 }
 
-.tegs-decor::after {
+.tegs::after {
    content: '';
    background-color: rgb(181, 159, 91);
    opacity: 0.4;
    position: absolute;
-   top: 45px;
-   right: 41%;
+   top: 30px;
+   right: 84%;
    width: 50px;
    height: 3px;
 }
@@ -531,8 +537,10 @@ input:focus {
 
 .themes {
    position: relative;
+   left: 8.5em;
    margin-top: 60px;
    margin-right: 50px;
+   margin-bottom: 30px;
    font-size: 14px;
    font-family: "OpenSans";
    color: rgb(15, 13, 14);
@@ -541,19 +549,19 @@ input:focus {
    line-height: 2.082;
 }
 
-.themes-decor::after {
+.themes::after {
    content: '';
    background-color: rgb(181, 159, 91);
    opacity: 0.4;
    position: absolute;
-   top: 45px;
-   right: 38%;
+   top: 30px;
+   right: 80%;
    width: 70px;
    height: 3px;
 }
 
-.topics li,
-a {
+.topic-list,
+.topic-link {
    text-decoration: none;
    list-style: none;
    font-size: 15.697px;
@@ -571,7 +579,7 @@ sup {
    color: rgb(181, 159, 91);
 }
 
-.our-products {
+/* .our-products {
    position: relative;
    font-size: 20px;
    font-family: "OpenSans";
@@ -589,8 +597,6 @@ sup {
    height: 3px;
    top: 60px;
 }
-
-.our-products-prices {}
 
 .product-title h3 {
 
@@ -692,13 +698,10 @@ sup {
    padding: 50px;
    top: 150px;
    right: -50px;
-}
+} */
 
 .footer {
    margin-top: 50px;
-   /* width: 100%;
-   background-color: #f4f7f6;
-   height: 170px; */
 
 }
 
