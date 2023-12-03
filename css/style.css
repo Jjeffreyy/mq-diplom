@@ -131,6 +131,38 @@ body {
    color: white;
 }
 
+.garden-on-the-windowsill {
+   background-image: url(../img/trend1.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 410px;
+   height: 320px;
+}
+
+.cheeses {
+   background-image: url(../img/trend2.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 410px;
+   height: 320px;
+}
+
+.first-trip {
+   background-image: url(../img/trend3.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 410px;
+   height: 320px;
+}
+
+.lemons {
+   background-image: url(../img/trend4.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 410px;
+   height: 320px;
+}
+
 .trend {
    position: relative;
    margin-top: 50px;
@@ -168,14 +200,10 @@ body {
    gap: 1.3em;
 }
 
-.art-trend {
-   width: 400px;
-}
-
 .text-trend {
    position: absolute;
-   top: 130px;
-   left: 1em;
+   bottom: 10px;
+   left: 1.5em;
    width: 350px;
    border: 2px solid rgb(181, 159, 91);
    padding-left: 1em;
@@ -186,10 +214,10 @@ body {
 .trend::after {
    content: '';
    position: absolute;
-   top: 0;
+   top: 0px;
    left: 0;
    right: 0;
-   bottom: 4px;
+   bottom: 0;
    background: rgba(0, 0, 0, .5);
    z-index: 2;
 }
@@ -579,6 +607,101 @@ sup {
    color: rgb(181, 159, 91);
 }
 
+.our-products {
+   position: relative;
+   bottom: 1em;
+   left: 25em;
+   font-size: 20px;
+   font-family: "OpenSans";
+   color: rgb(15, 13, 14);
+   font-weight: bold;
+   text-transform: uppercase;
+   line-height: 1.458;
+   text-align: left;
+}
+
+.our-products::after {
+   content: '';
+   background-color: rgb(181, 159, 91);
+   opacity: 0.4;
+   position: absolute;
+   top: 2.1em;
+   right: 53em;
+   width: 80px;
+   height: 3px;
+
+}
+
+.our-products-prices {
+   display: flex;
+   justify-content: space-around;
+}
+
+.product-title-shop {
+   font-size: 22.424px;
+   font-family: "OpenSans";
+   color: rgb(15, 13, 14);
+   font-weight: bold;
+   text-transform: uppercase;
+   line-height: 1.2;
+   text-align: left;
+}
+
+.product-text-shop {
+   font-size: 15px;
+   font-family: "OpenSans";
+   color: rgb(15, 13, 14);
+   line-height: 1.467;
+   width: 259px;
+   height: 38px;
+}
+
+.price-throught {
+   font-size: 15.697px;
+   font-family: "OpenSans";
+   color: rgb(15, 13, 14);
+   font-weight: bold;
+   text-decoration: line-through;
+   text-transform: uppercase;
+   line-height: 1.714;
+   text-align: left;
+}
+
+.price {
+   margin-top: 70px;
+   font-size: 22.424px;
+   font-family: "OpenSans";
+   color: rgb(15, 13, 14);
+   font-weight: bold;
+   text-transform: uppercase;
+   line-height: 1.2;
+   text-align: left;
+
+
+
+}
+
+.price-doll {
+   margin-top: 100px;
+}
+
+.product-link {
+   margin-left: 9em;
+   padding: 20px 30px 20px 30px;
+   font-size: 15.697px;
+   font-family: "OpenSans";
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   text-transform: uppercase;
+   border: 3px solid rgb(181, 159, 91);
+   background-color: rgb(181, 159, 91);
+}
+
+.product-box {
+   border: 3px solid rgb(181, 159, 91);
+   padding: 30px;
+}
+
 /* .our-products {
    position: relative;
    font-size: 20px;
@@ -709,6 +832,7 @@ sup {
    display: flex;
    justify-content: center;
    background-color: #f4f7f6;
+   padding: 32px;
 }
 
 .footer-image {
@@ -720,4 +844,9 @@ sup {
 .copyright {
    margin: 50px 0;
    text-align: center;
+   font-size: 13.455px;
+   font-family: "OpenSans";
+   color: rgb(153, 153, 153);
+   font-weight: bold;
+   line-height: 3.333;
 }
