@@ -611,12 +611,20 @@ sup {
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: calc(33.33% - gap);
+   flex-wrap: wrap;
+   gap: 60px;
+   width: calc(33.33% - 60px);
+}
+
+.price-link {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .product-box {
    flex-grow: 1;
-   margin: -30px;
+   margin: -90px;
 }
 
 .our-products {
@@ -832,7 +840,7 @@ sup {
 } */
 
 .footer {
-   margin-top: 50px;
+   margin-top: 100px;
 
 }
 
