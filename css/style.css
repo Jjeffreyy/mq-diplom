@@ -611,8 +611,6 @@ sup {
    display: flex;
    flex-direction: column;
    align-items: center;
-   flex-wrap: wrap;
-   gap: 60px;
    width: calc(33.33% - 60px);
 }
 
@@ -623,38 +621,37 @@ sup {
 }
 
 .product-box {
+   margin-top: -35px;
+   padding: 55px;
    flex-grow: 1;
-   margin: -90px;
+   border: 3px solid rgb(181, 159, 91);
 }
 
+
+
 .our-products {
-   position: relative;
-   bottom: 1em;
-   left: 25em;
+   margin-bottom: 25px;
    font-size: 20px;
    font-family: "OpenSans";
    color: rgb(15, 13, 14);
    font-weight: bold;
    text-transform: uppercase;
-   line-height: 1.458;
    text-align: left;
 }
 
 .our-products::after {
    content: '';
-   background-color: rgb(181, 159, 91);
-   opacity: 0.4;
-   position: absolute;
-   top: 2.1em;
-   right: 53em;
-   width: 80px;
-   height: 3px;
+   display: block;
+   width: 66px;
+   margin: 9px auto 0 auto;
+   border-bottom: 3px solid rgb(181, 159, 91);
 
 }
 
 .our-products-prices {
    display: flex;
    justify-content: space-around;
+   gap: 60px;
 }
 
 .product-title-shop {
@@ -663,184 +660,50 @@ sup {
    color: rgb(15, 13, 14);
    font-weight: bold;
    text-transform: uppercase;
-   line-height: 1.2;
-   text-align: left;
 }
 
 .product-text-shop {
+   margin-bottom: 30px;
    font-size: 15px;
    font-family: "OpenSans";
    color: rgb(15, 13, 14);
-   line-height: 1.467;
-   width: 259px;
-   height: 38px;
 }
 
-.price-throught {
-   font-size: 16px;
-   font-family: "OpenSans";
-   color: rgb(15, 13, 14);
-   font-weight: bold;
-   text-decoration: line-through;
-   text-transform: uppercase;
-   line-height: 1.714;
-   text-align: left;
+.product-text-link {
+   color: rgb(181, 159, 91);
+}
+
+.price-link {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .price {
-   margin-top: 70px;
-   font-size: 22px;
-   font-family: "OpenSans";
-   color: rgb(15, 13, 14);
-   font-weight: bold;
-   text-transform: uppercase;
-   line-height: 1.2;
-   text-align: left;
+   font: 700 20px 'open sans', sans-serif;
+}
 
-
-
+.price-sale {
+   font: 700 14px 'open sans', sans-serif;
+   text-decoration: line-through;
 }
 
 .product-link {
-   margin-left: 9em;
-   padding: 20px 30px 20px 30px;
+   padding: 20px 30px;
    font-size: 16px;
    font-family: "OpenSans";
    color: rgb(255, 255, 255);
    font-weight: bold;
    text-transform: uppercase;
-   border: 3px solid rgb(181, 159, 91);
    background-color: rgb(181, 159, 91);
 }
 
-.product-box {
-   border: 3px solid rgb(181, 159, 91);
-   padding: 30px;
+.product-link:hover {
+   background-color: #000;
 }
-
-/* .our-products {
-   position: relative;
-   font-size: 20px;
-   font-family: "OpenSans";
-   color: rgb(15, 13, 14);
-   font-weight: bold;
-   text-transform: uppercase;
-   line-height: 1.458;
-}
-
-.our-prodicts-decor {
-   background-color: rgb(181, 159, 91);
-   opacity: 0.4;
-   position: absolute;
-   width: 70px;
-   height: 3px;
-   top: 60px;
-}
-
-.product-title h3 {
-
-   font-size: 22.424px;
-   font-family: "OpenSans";
-   color: rgb(15, 13, 14);
-   font-weight: bold;
-   text-transform: uppercase;
-   line-height: 1.2;
-}
-
-.product-title p {
-   font-size: 15px;
-   font-family: "OpenSans";
-   color: rgb(15, 13, 14);
-   line-height: 1.467;
-   width: 300px;
-}
-
-.price {
-   font-size: 22.424px;
-   font-family: "OpenSans";
-   color: rgb(15, 13, 14);
-   font-weight: bold;
-   text-transform: uppercase;
-   line-height: 1.2;
-}
-
-.price p {
-   margin: 0;
-}
-
-.price {
-   margin-top: 50px;
-}
-
-.price-throught {
-   font-size: 15.697px;
-   font-family: "OpenSans";
-   color: rgb(15, 13, 14);
-   font-weight: bold;
-   text-decoration: line-through;
-   text-transform: uppercase;
-   line-height: 1.714;
-
-}
-
-.soffa-pillow,
-.bunny-doll,
-.frame {
-   position: relative;
-}
-
-.product-link-soffa a {
-   position: absolute;
-   padding: 5px 50px 5px 50px;
-   bottom: 40px;
-   left: 150px;
-   font-size: 15.697px;
-   font-family: "OpenSans";
-   color: rgb(255, 255, 255);
-   font-weight: bold;
-   text-transform: uppercase;
-   border: 3px solid rgb(181, 159, 91);
-   background-color: rgb(181, 159, 91);
-}
-
-.product-link-doll a {
-   position: absolute;
-   padding: 5px 50px 5px 50px;
-   bottom: 30px;
-   left: 150px;
-   font-size: 15.697px;
-   font-family: "OpenSans";
-   color: rgb(255, 255, 255);
-   font-weight: bold;
-   text-transform: uppercase;
-   border: 3px solid rgb(181, 159, 91);
-   background-color: rgb(181, 159, 91);
-}
-
-.product-link-frame a {
-   position: absolute;
-   padding: 5px 50px 5px 50px;
-   bottom: 40px;
-   left: 150px;
-   font-size: 15.697px;
-   font-family: "OpenSans";
-   color: rgb(255, 255, 255);
-   font-weight: bold;
-   text-transform: uppercase;
-   border: 3px solid rgb(181, 159, 91);
-   background-color: rgb(181, 159, 91);
-}
-
-.product-box {
-   position: absolute;
-   border: 3px solid rgb(181, 159, 91);
-   padding: 50px;
-   top: 150px;
-   right: -50px;
-} */
 
 .footer {
-   margin-top: 100px;
+   margin-top: 60px;
 
 }
 
@@ -848,7 +711,7 @@ sup {
    display: flex;
    justify-content: center;
    background-color: #f4f7f6;
-   padding: 32px;
+   padding: 15px;
 }
 
 .footer-image {
@@ -860,7 +723,7 @@ sup {
 .copyright {
    margin: 50px 0;
    text-align: center;
-   font-size: 13.455px;
+   font-size: 14px;
    font-family: "OpenSans";
    color: rgb(153, 153, 153);
    font-weight: bold;
