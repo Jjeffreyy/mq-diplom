@@ -166,7 +166,7 @@ body {
 .trend {
    position: relative;
    margin-top: 50px;
-   width: calc(25% - margin);
+   width: calc(25% - margin-top);
 }
 
 .title-trend {
@@ -630,22 +630,22 @@ sup {
 
 
 .our-products {
-   display: block;
-   margin-left: 25em;
    margin-bottom: 25px;
    font-size: 20px;
    font-family: "OpenSans";
    color: rgb(15, 13, 14);
    font-weight: bold;
    text-transform: uppercase;
-   text-align: left;
+   text-align: center;
 }
 
 .our-products::after {
    content: '';
    display: block;
    width: 66px;
-   margin: 9px 0 0 70px;
+   margin-top: 9px;
+   margin-left: auto;
+   margin-right: auto;
    border-bottom: 3px solid rgb(181, 159, 91);
 
 }
