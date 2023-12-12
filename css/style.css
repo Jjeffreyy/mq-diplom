@@ -131,118 +131,114 @@ body {
    color: white;
 }
 
+.section-trend {
+   margin-top: 40px;
+}
+
 .garden-on-the-windowsill {
    background-image: url(../img/trend1.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   width: 410px;
-   height: 320px;
 }
 
 .cheeses {
    background-image: url(../img/trend2.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   width: 410px;
-   height: 320px;
 }
 
 .first-trip {
    background-image: url(../img/trend3.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   width: 410px;
-   height: 320px;
 }
 
 .lemons {
    background-image: url(../img/trend4.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   width: 410px;
-   height: 320px;
 }
 
 .trend {
+   display: flex;
+   align-items: flex-end;
+   flex-wrap: wrap;
+   width: calc(25% - 3px);
+   min-height: 230px;
+   padding: 85px 0 25px 0;
+   z-index: 0;
+   background-repeat: no-repeat;
+   background-size: cover;
    position: relative;
-   margin-top: 50px;
-   width: calc(25% - margin-top);
 }
 
 .title-trend {
-   position: relative;
-   left: 37em;
-   margin-top: 2em;
+   margin-bottom: 25px;
    font-size: 20px;
    font-family: "OpenSans";
    color: rgb(15, 13, 14);
    font-weight: bold;
    text-transform: uppercase;
+   text-align: center;
 
-   line-height: 1.458;
 }
 
 .title-trend::after {
    content: '';
-   background-color: rgb(181, 159, 91);
-   opacity: 0.4;
-   position: absolute;
-   top: 1.5em;
-   left: 2em;
-   width: 100px;
-   height: 3px;
-
+   display: block;
+   width: 66px;
+   margin-top: 9px;
+   margin-left: auto;
+   margin-right: auto;
+   border-bottom: 3px solid rgb(181, 159, 91);
 }
 
 .trend-box {
+   width: 100%;
    display: flex;
-   position: relative;
-   gap: 1.3em;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 3px;
 }
 
 .text-trend {
-   position: absolute;
-   bottom: 10px;
-   left: 1.5em;
-   width: 350px;
-   border: 2px solid rgb(181, 159, 91);
-   padding-left: 1em;
-   z-index: 3;
+   margin-right: 15px;
+   margin-left: 15px;
+   padding: 30px 25px;
+   border: 3px solid rgb(181, 159, 91);
 
+}
+
+.trend-tags-list {
+   margin-bottom: 12px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.trend-tags {
+   margin-right: 20px;
+   font: 700 14px 'OpenSans', Sans-serif;
+   color: rgb(181, 159, 91);
+   text-transform: uppercase;
+}
+
+.trend-tags:hover {
+   text-decoration: underline;
+}
+
+.inner-title {
+   font-size: 16px;
+   text-transform: uppercase;
+   font-family: 'OpenSans';
+   color: #fff;
+   font-weight: bold;
+}
+
+.inner-title:hover {
+   color: rgb(181, 159, 91);
 }
 
 .trend::after {
    content: '';
    position: absolute;
-   top: 0px;
+   top: 0;
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, .5);
-   z-index: 2;
-}
-
-.yellow-text {
-   display: inline-block;
-   font-size: 16px;
-   margin-bottom: 0;
-   font-family: "OpenSans";
-   color: rgb(181, 159, 91);
-   font-weight: bold;
-   text-transform: uppercase;
-   line-height: 2.857;
-
-}
-
-.white-text {
-   font-size: 23px;
-   margin-top: 0;
-   font-family: "OpenSans";
-   color: rgb(255, 255, 255);
-   font-weight: bold;
-   text-transform: uppercase;
-   line-height: 1.2;
-
+   background-color: rgba(0, 0, 0, .6);
+   z-index: -1;
 }
 
 .box-post-list {
@@ -622,7 +618,7 @@ sup {
 
 .product-box {
    margin-top: -35px;
-   padding: 55px;
+   padding: 55px 20px;
    flex-grow: 1;
    border: 3px solid rgb(181, 159, 91);
 }
