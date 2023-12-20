@@ -89,10 +89,11 @@ body {
 
 .main-title {
    position: relative;
-   padding: 130px 350px 140px 350px;
+   padding-left: 230px;
+   padding-right: 208px;
+   padding-top: 97px;
    text-align: center;
    font-size: 31px;
-   font-family: "OpenSans";
    color: rgb(255, 255, 255);
    font-weight: bold;
    text-transform: uppercase;
@@ -380,6 +381,8 @@ body {
 }
 
 .newposts-title-link {
+   display: inline-block;
+   line-height: 1.1;
    color: black;
 }
 
@@ -510,7 +513,7 @@ input:focus {
    background-color: #323232;
 }
 
-.tegs {
+.tags {
    margin-bottom: 30px;
    font-size: 14px;
    font-family: "OpenSans";
@@ -520,7 +523,7 @@ input:focus {
    text-align: center;
 }
 
-.tegs::after {
+.tags::after {
    content: '';
    display: block;
    border-bottom: 3px solid rgb(181, 159, 91);
@@ -529,27 +532,22 @@ input:focus {
 
 }
 
-.tegs-list a {
-   margin-right: 0;
-   padding: 5px;
-   list-style: none;
-   text-decoration: none;
+.tags-link {
    font-size: 14px;
    font-family: "OpenSans";
+   font: 700 12px "OpenSans" sans-serif;
+   text-transform: uppercase;
    color: rgb(15, 13, 14);
    font-weight: bold;
    text-transform: uppercase;
-   line-height: 3.333;
-   border: 3px solid rgb(238, 238, 238);
 }
 
-.tegs-list {
+.tags-list {
    display: flex;
    flex-wrap: wrap;
 }
 
 .tag-item {
-   display: inline-block;
    padding: 5px 12px;
    border: 3px solid rgb(238, 238, 238);
 }
@@ -561,12 +559,6 @@ input:focus {
 .tag-item:nth-child(n) {
    margin-right: 6px;
    margin-bottom: 5px;
-}
-
-.tegs-link {
-   color: rgb(15, 13, 14);
-   font: 700 12px "OpenSans" sans-serif;
-   text-transform: uppercase;
 }
 
 .themes {
@@ -735,5 +727,9 @@ sup {
    font-family: "OpenSans";
    color: rgb(153, 153, 153);
    font-weight: bold;
-   line-height: 3.333;
+}
+
+#burger,
+[for=burger] {
+   display: none;
 }

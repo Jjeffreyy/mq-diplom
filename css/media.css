@@ -1,0 +1,18 @@
+@media screen and (max-width:768px) {
+    [for=burger] {
+        display: block;
+        color: rgb(255, 255, 255);
+        z-index: 5;
+
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    #burger:checked+.burger+.header-menu {
+        display: block;
+    }
+
+    .trend-box {}
+}
